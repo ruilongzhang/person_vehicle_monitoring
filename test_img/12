@@ -1,0 +1,10 @@
+def cut_image(image, shortcutbox):
+    x, y, w, h = shortcutbox
+    xmin = int(round(x - (w / 2)))
+    xmax = int(round(x + (w / 2)))
+    ymin = int(round(y - (h / 2)))
+    ymax = int(round(y + (h / 2)))
+    xmin = 0 if xmin < 0 else xmin
+    ymin = 0 if ymin < 0 else ymin
+    img_s = image[ymin:ymax, xmin:xmax]
+    return img_s

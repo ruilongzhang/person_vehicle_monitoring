@@ -1,0 +1,1 @@
+TRUCK_LABEL = {0: 'crane', 1:'heavytruck', 2:'sanitation', 3:'slagcar'}
